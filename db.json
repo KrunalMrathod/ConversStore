@@ -1,0 +1,20 @@
+{
+    "shopByStyle" : [
+        {
+            "title" : "High Top",
+            "img" :  "https://www.converse.in/media/wysiwyg/march_15-24.png?auto=webp&format=png&quality=85"
+        },
+        {
+            "title" : "Low Top",
+            "img" :  "https://www.converse.in/media/wysiwyg/march_15-25.png?auto=webp&format=png&quality=85"
+        },
+        {
+            "title" : "Platform",
+            "img" :  "https://www.converse.in/media/wysiwyg/march_15-26.png?auto=webp&format=png&quality=85"
+        },
+        {
+            "title" : "Kids",
+            "img" :  "https://www.converse.in/media/wysiwyg/Kids.png?auto=webp&format=png&quality=85"
+        }
+    ]
+}
