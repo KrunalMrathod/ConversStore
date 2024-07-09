@@ -1,13 +1,19 @@
-
 import NavLog from '../assest/Navlogo.png';
 import { FaRegUser, FaRegHeart } from 'react-icons/fa';
 import { FiShoppingCart } from 'react-icons/fi';
 import { IoSearch } from 'react-icons/io5';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate('/');
+  };
+
   return (
     <div className="sticky top-0 z-50 flex justify-between items-center shadow-custom-navbar h-16 bg-white">
-      <div className="flex items-center w-2/5 h-full">
+      <div className="flex items-center w-2/5 h-full" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
         <div className="w-[25%] cursor-pointer h-full">
           <img src={NavLog} alt="Logo" className="w-full h-full object-cover" />
         </div>

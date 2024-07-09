@@ -1,20 +1,69 @@
 {
-    "shopByStyle" : [
-        {
-            "title" : "High Top",
-            "img" :  "https://www.converse.in/media/wysiwyg/march_15-24.png?auto=webp&format=png&quality=85"
-        },
-        {
-            "title" : "Low Top",
-            "img" :  "https://www.converse.in/media/wysiwyg/march_15-25.png?auto=webp&format=png&quality=85"
-        },
-        {
-            "title" : "Platform",
-            "img" :  "https://www.converse.in/media/wysiwyg/march_15-26.png?auto=webp&format=png&quality=85"
-        },
-        {
-            "title" : "Kids",
-            "img" :  "https://www.converse.in/media/wysiwyg/Kids.png?auto=webp&format=png&quality=85"
-        }
+    "shopByStyle": [
+      {
+        "title": "High Top",
+        "img": "https://www.converse.in/media/wysiwyg/march_15-24.png?auto=webp&format=png&quality=85",
+        "details": [
+          {
+            "title": "High Top Sneaker 1",
+            "img": "https://www.converse.in/media/wysiwyg/high_top_1.png",
+            "price": "$70"
+          },
+          {
+            "title": "High Top Sneaker 2",
+            "img": "https://www.converse.in/media/wysiwyg/high_top_2.png",
+            "price": "$80"
+          }
+        ]
+      },
+      {
+        "title": "Low Top",
+        "img": "https://www.converse.in/media/wysiwyg/march_15-25.png?auto=webp&format=png&quality=85",
+        "details": [
+          {
+            "title": "Low Top Sneaker 1",
+            "img": "https://www.converse.in/media/wysiwyg/low_top_1.png",
+            "price": "$60"
+          },
+          {
+            "title": "Low Top Sneaker 2",
+            "img": "https://www.converse.in/media/wysiwyg/low_top_2.png",
+            "price": "$65"
+          }
+        ]
+      },
+      {
+        "title": "Platform",
+        "img": "https://www.converse.in/media/wysiwyg/march_15-26.png?auto=webp&format=png&quality=85",
+        "details": [
+          {
+            "title": "Platform Sneaker 1",
+            "img": "https://www.converse.in/media/wysiwyg/platform_1.png",
+            "price": "$75"
+          },
+          {
+            "title": "Platform Sneaker 2",
+            "img": "https://www.converse.in/media/wysiwyg/platform_2.png",
+            "price": "$85"
+          }
+        ]
+      },
+      {
+        "title": "Kids",
+        "img": "https://www.converse.in/media/wysiwyg/Kids.png?auto=webp&format=png&quality=85",
+        "details": [
+          {
+            "title": "Kids Sneaker 1",
+            "img": "https://www.converse.in/media/wysiwyg/kids_1.png",
+            "price": "$50"
+          },
+          {
+            "title": "Kids Sneaker 2",
+            "img": "https://www.converse.in/media/wysiwyg/kids_2.png",
+            "price": "$55"
+          }
+        ]
+      }
     ]
-}
+  }
+  
