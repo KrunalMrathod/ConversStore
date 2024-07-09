@@ -1,13 +1,16 @@
-import "./index.css";
-import NavBar  from "./components/Navbar"
-import TopNav from "./components/TopNav";
-
+import './index.css'
+import Navbar from './components/Navbar'
+import TopNav from './components/TopNav'
+import FirstBanner from './components/FirstBanner'
+import NewLaunch from './components/NewLaunch'
 
 export const App = () => {
   return (
-   <>
-    <TopNav/>
-    <NavBar/>
+    <>
+      <TopNav />
+      <Navbar />
+      <FirstBanner />
+      <NewLaunch/>
     </>
-  );
-};
+  )
+}
