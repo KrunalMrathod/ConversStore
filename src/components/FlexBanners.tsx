@@ -8,6 +8,7 @@ interface FlexBannersProps {
   images: string[]
   buttonText?: string
   layout: 'layout1' | 'layout2' | 'layout3'
+  divStyles?: React.CSSProperties
 }
 
 const FlexBanners: React.FC<FlexBannersProps> = ({
@@ -18,27 +19,30 @@ const FlexBanners: React.FC<FlexBannersProps> = ({
   images,
   buttonText,
   layout,
+  divStyles,
 }) => {
   let content
 
   switch (layout) {
     case 'layout1':
       content = (
-        <div className=' my-16'>
+        <div className="my-6">
           <h2 className="text-2xl font-bold">{heading}</h2>
           <div className="flex w-full h-[80vh]">
-            <div className="w-[70%]">
+            <div className="w-[70%] cursor-pointer">
               <img
                 src={images[0]}
                 alt=""
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="w-[30%] p-4 text-center">
-              <h3 className="text-xl font-bold mb-2">{textHead}</h3>
-              <p>{text}</p>
+            <div className="w-[30%] p-4 " style={divStyles}>
+              <h3 className="text-5xl font-bold mb-7 font-poppins my-32 ">
+                {textHead}
+              </h3>
+              <p className="font-poppins mb-5">{text}</p>
               {buttonText && (
-                <button className="bg-black text-white py-2 px-4 rounded">
+                <button className="bg-white text-black py-2 px-4 font-poppins font-bold cursor-pointer">
                   {buttonText}
                 </button>
               )}
@@ -49,8 +53,8 @@ const FlexBanners: React.FC<FlexBannersProps> = ({
       break
     case 'layout2':
       content = (
-        <div className=' my-16'>
-          <h2 className="text-2xl font-bold mb-4 ">{heading}</h2>
+        <div className="my-24 cursor-pointer">
+          <h2 className="text-2xl font-bold mb-4">{heading}</h2>
           <div className="flex w-full h-[80vh]">
             <div className="w-[33%]">
               <img
@@ -60,7 +64,7 @@ const FlexBanners: React.FC<FlexBannersProps> = ({
               />
             </div>
             <div className="w-[33%]">
-            <img
+              <img
                 src={images[2]}
                 alt=""
                 className="h-full w-full object-cover"
@@ -79,25 +83,27 @@ const FlexBanners: React.FC<FlexBannersProps> = ({
       break
     case 'layout3':
       content = (
-        <div className=' my-24'>
-          <h2 className="text-2xl font-bold mb-4">{heading}</h2>
-          <div className="flex w-full h-[80vh]">
-            <div className="w-[60%]">
+        <div className="my-32">
+          <h2 className="text-2xl font-bold">{heading}</h2>
+          <div className="flex w-full h-[70vh]">
+            <div className="w-[40%] p-4 " style={divStyles}>
+              <h3 className="text-5xl font-bold mb-7 font-poppins my-32 ">
+                {textHead}
+              </h3>
+              <p className="font-poppins mb-5">{text}</p>
+              {buttonText && (
+                <button className="bg-white text-black py-2 px-4 font-poppins font-bold cursor-pointer">
+                  {buttonText}
+                </button>
+              )}
+            </div>
+            <div className="w-[60%] cursor-pointer">
               <img
                 src={images[0]}
                 alt=""
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="w-[40%]">
-            <h3 className="text-xl font-bold mb-2">{textHeading}</h3>
-            <p>{text}</p>
-            {buttonText && (
-              <button className="bg-black text-white py-2 px-4 rounded">
-                {buttonText}
-              </button>
-            )}
-          </div>
           </div>
         </div>
       )
