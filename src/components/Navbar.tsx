@@ -69,7 +69,7 @@ const Navbar = () => {
             placeholder="Search"
             className="bg-transparent border-none outline-none placeholder-white text-white w-0 md:w-auto md:placeholder:hidden"
           />
-          <IoSearch className="fill-slate-50 cursor-pointer w-[50%] m-auto h-full" />
+          <IoSearch className="fill-slate-50 cursor-pointer w-[50%] m-auto h-6" />
         </div>
       </div>
 
