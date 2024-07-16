@@ -23,7 +23,7 @@ const ShopByStyle: React.FC = () => {
 
   return (
     <div className="w-[95%] m-28 mx-auto  ">
-      <h1 className="font-poppins font-extrabold text-xl">Shop By Style</h1>
+      <h1 className="font-poppins font-extrabold text-xl md:text-left text-center">Shop By Style</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 m-auto">
         {styles.map((style, index) => (
           <div key={index} className="p-2 cursor-pointer" onClick={() => handleStyleClick(style.title)}>

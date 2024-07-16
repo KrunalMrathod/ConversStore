@@ -10,6 +10,8 @@ import Shoes from './components/shoes';
 import FlexBanners from "./components/FlexBanners";
 import { LaunchData } from './Typse';
 import { BannerData } from './Typse';
+import SignUpEmail from './components/SignUpEmail';
+import Footer from './components/Footer';
 
 const App: React.FC = () => {
   const [launchData, setLaunchData] = useState<LaunchData[]>([]);
@@ -48,6 +50,8 @@ const App: React.FC = () => {
             {bannerData.map((data) => (
               <FlexBanners key={data.id} {...data} />
             ))}
+            <SignUpEmail/>
+            <Footer/>
           </>
         } />
         <Route path="/style/:title" element={<Shoes />} />

@@ -23,7 +23,7 @@ const NewLaunch: React.FC<NewLaunchProps> = ({ data }) => {
   return (
     <div className="flex flex-col h-[100vh] w-[95%] m-auto my-10 cursor-pointer" onClick={handleClick}>
       {data.heading && (
-        <h2 className="text-black text-2xl font-bold p-2 mb-4">
+        <h2 className="text-black md:text-2xl font-bold p-2 mb-4">
           {data.heading}
         </h2>
       )}
