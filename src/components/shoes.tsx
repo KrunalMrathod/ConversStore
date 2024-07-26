@@ -25,7 +25,7 @@ const Shoes: React.FC = () => {
   }, [title]);
 
   if (!style) {
-    return <div>Loading...</div>;
+    return <div>Loading... this is shoes</div>;
   }
 
   return (

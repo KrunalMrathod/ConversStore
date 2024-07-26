@@ -1,11 +1,4 @@
 
-// export interface LaunchData {
-//   images: string[];
-//   text: string;
-//   heading?: string;
-//   textHeading : string;
-// }
-
 
 export interface LaunchData {
   id: number;
@@ -13,6 +6,7 @@ export interface LaunchData {
   text?: string;
   heading?: string;
   textHeading?: string;
+  title : string
 }
 
 export interface BannerData {

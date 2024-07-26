@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 interface FlexBannersProps {
   heading: string
@@ -21,6 +22,12 @@ const FlexBanners: React.FC<FlexBannersProps> = ({
   layout,
   divStyles,
 }) => {
+  const navigate = useNavigate()
+
+  const handleImageClick = () => {
+    navigate(`/style/${heading}`)
+  }
+
   let content
 
   switch (layout) {
@@ -29,7 +36,7 @@ const FlexBanners: React.FC<FlexBannersProps> = ({
         <div className="my-6">
           <h2 className="text-2xl font-bold">{heading}</h2>
           <div className="flex w-full h-[80vh]">
-            <div className="w-[70%] cursor-pointer">
+            <div className="w-[70%] cursor-pointer" onClick={() => handleImageClick(0)}>
               <img
                 src={images[0]}
                 alt=""
@@ -56,23 +63,23 @@ const FlexBanners: React.FC<FlexBannersProps> = ({
         <div className="my-24 cursor-pointer">
           <h2 className="text-2xl font-bold mb-4">{heading}</h2>
           <div className="flex w-full h-[80vh]">
-            <div className="w-[33%]">
+            <div className="w-[33%]" onClick={() => handleImageClick(0)}>
               <img
                 src={images[0]}
                 alt=""
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="w-[33%]">
+            <div className="w-[33%]" onClick={() => handleImageClick(1)}>
               <img
-                src={images[2]}
+                src={images[1]}
                 alt=""
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="w-[33%]">
+            <div className="w-[33%]" onClick={() => handleImageClick(2)}>
               <img
-                src={images[1]}
+                src={images[2]}
                 alt=""
                 className="h-full w-full object-cover"
               />
@@ -97,7 +104,7 @@ const FlexBanners: React.FC<FlexBannersProps> = ({
                 </button>
               )}
             </div>
-            <div className="w-[60%] cursor-pointer">
+            <div className="w-[60%] cursor-pointer" onClick={() => handleImageClick(0)}>
               <img
                 src={images[0]}
                 alt=""

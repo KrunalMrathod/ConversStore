@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LaunchData } from '../Typse';
 
@@ -9,19 +9,22 @@ interface NewLaunchProps {
 const NewLaunch: React.FC<NewLaunchProps> = ({ data }) => {
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate('/style/90s-remix', {
+  const handleClick = (title: string) => {
+    navigate(`/style/${title}`, {
       state: {
         images: data.images,
         text: data.text,
         heading: data.heading ,
-        textHeading : data.textHeading
+        textHeading : data.textHeading,
+        title : data.title,
       }
     });
   };
 
+  
+  
   return (
-    <div className="flex flex-col h-[100vh] w-[95%] m-auto my-10 cursor-pointer" onClick={handleClick}>
+    <div className="flex flex-col h-[100vh] w-[95%] m-auto my-10 cursor-pointer" onClick={()=> {handleClick(data.title)}}>
       {data.heading && (
         <h2 className="text-black md:text-2xl font-bold p-2 mb-4">
           {data.heading}
