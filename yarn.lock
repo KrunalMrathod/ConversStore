@@ -5771,7 +5771,7 @@ serve-static@1.15.0:
 
 serve@^14.2.3:
   version "14.2.3"
-  resolved "https://registry.npmjs.org/serve/-/serve-14.2.3.tgz"
+  resolved "https://registry.yarnpkg.com/serve/-/serve-14.2.3.tgz#047ba2b349354255bc09e0332cd41a92787836c9"
   integrity sha512-VqUFMC7K3LDGeGnJM9h56D3XGKb6KGgOw0cVNtA26yYXHCcpxf3xwCTUaQoWlVS7i8Jdh3GjQkOB23qsXyjoyQ==
   dependencies:
     "@zeit/schemas" "2.36.0"

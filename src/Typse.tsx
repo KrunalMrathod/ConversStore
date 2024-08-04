@@ -1,4 +1,9 @@
-
+export interface Sale {
+  title : string;
+  bannerImg : string;
+  products : string[];
+  
+}
 
 export interface LaunchData {
   id: number;

@@ -5,9 +5,9 @@
       "bannerImg" :  "https://www.converse.in/media/wysiwyg/Desktop.png?auto=webp&format=png&quality=85" , 
       "products" : [
         {
-          "title": "High Top Sneaker 1",
+          "title": "Chuck 70",
           "img": "https://www.converse.in/media/wysiwyg/high_top_1.png",
-          "price": "$70"
+          "price": "$6,299"
         },
         {
           "title": "High Top Sneaker 2",
