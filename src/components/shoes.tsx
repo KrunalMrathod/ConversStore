@@ -29,7 +29,7 @@ const Shoes: React.FC = () => {
     } else {
       fetch(`http://localhost:3001/shopByStyle?title=${title}`)
         .then((response) => response.json())
-        .then((data) => setStyle(data[0]))
+        .then((data) => console.log(data))
         .catch((error) => console.error('Error fetching data:', error))
     }
   }, [title, location.state])
@@ -40,6 +40,8 @@ const Shoes: React.FC = () => {
   }
 
   const items = style.details || style.products || []
+
+  console.log("shoes")
 
   return (
     <div className="w-[95%] m-auto">

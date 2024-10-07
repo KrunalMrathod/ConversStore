@@ -24,4 +24,5 @@ export interface BannerData {
   buttonText?: string;
   divStyles?: React.CSSProperties;
   layout: 'layout1' | 'layout2' | 'layout3';
+  products : string[];
 }

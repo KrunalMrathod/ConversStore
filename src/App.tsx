@@ -46,20 +46,21 @@ const App: React.FC = () => {
           element={
             <>
               <FirstBanner />
-              {launchData.map((data) => (
-                <NewLaunch key={data.id} data={data} />
+              {launchData.map((item) => (
+                <NewLaunch key={item.id} item={item} />
               ))}
               <ShopByStyle />
-              {bannerData.map((data) => (
-                <FlexBanners key={data.id} {...data} />
+              {bannerData.map((item) => (
+                <FlexBanners key={item.id} item={item} />
               ))}
+
               <SignUpEmail />
               <Footer />
             </>
           }
         />
         <Route path="/style/:title" element={<Shoes />} />
-        <Route path="*" element={<NotFound/>}/>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   )

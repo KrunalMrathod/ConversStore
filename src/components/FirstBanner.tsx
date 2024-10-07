@@ -23,13 +23,14 @@ const FirstBanner = () => {
   }
 
   return (
-    <div className="w-[95%] m-auto my-1 cursor-pointer">
+    <div className="w-[100%] my-1 mx-auto cursor-pointer">
       {sale.map((item) => (
         <img
           key={item.title}
           src={item.bannerImg}
           alt={item.title}
           onClick={() => handleStyleClick(item)}
+          className='mx-auto'
         />
       ))}
     </div>
